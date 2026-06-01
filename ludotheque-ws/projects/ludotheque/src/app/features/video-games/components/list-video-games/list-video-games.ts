@@ -9,4 +9,5 @@ import {GetAllVideoGames} from '../../services/get-all-video-games';
 })
 export class ListVideoGames {
   private readonly getAllVideoGames = inject(GetAllVideoGames);
+  private readonly videoGames$ = this.getAllVideoGames.getAll();
 }
