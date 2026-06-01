@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Convert `TableVideoGame` to use a table layout and add an edit button feature&#10;&#10;demonstrate how to emit signals for parents">
+    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Add edit functionality to `ListVideoGames` and create form in `EditVideoGame`">
       <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/edit-video-game/edit-video-game.html" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/edit-video-game/edit-video-game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/edit-video-game/edit-video-game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/edit-video-game/edit-video-game.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.html" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="337" />
+    <option name="cachedIndexableFilesCount" value="447" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -41,59 +41,59 @@
     <decayedCancelled>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="4.83353154979308E-87" />
-      <entry key="S5" value="1.680002449018027E-34" />
-      <entry key="S10" value="7.240755103188376E-17" />
-      <entry key="S30" value="5.015886925871595E-5" />
-      <entry key="S60" value="0.047201827884364826" />
-      <entry key="M2" value="1.4573365569920658" />
-      <entry key="M5" value="11.548692121861311" />
-      <entry key="M10" value="23.957973289177502" />
-      <entry key="M15" value="32.6817258890101" />
-      <entry key="M30" value="56.3820896855753" />
-      <entry key="H1" value="101.736242742135" />
-      <entry key="H2" value="160.42769598131724" />
-      <entry key="H4" value="211.01919767167504" />
-      <entry key="D1" value="271.32695698909765" />
-      <entry key="W1" value="283.8427861562369" />
+      <entry key="S2" value="5.99353567050111E-275" />
+      <entry key="S5" value="2.9311696596177736E-110" />
+      <entry key="S10" value="2.3959194921039583E-55" />
+      <entry key="S30" value="9.835805989809004E-19" />
+      <entry key="S60" value="1.4025040245170042E-9" />
+      <entry key="M2" value="5.3696492557568506E-5" />
+      <entry key="M5" value="0.05072481899724287" />
+      <entry key="M10" value="1.2444176288563142" />
+      <entry key="M15" value="4.424078893877797" />
+      <entry key="M30" value="20.56377234724268" />
+      <entry key="H1" value="61.37818617611508" />
+      <entry key="H2" value="124.99834402266288" />
+      <entry key="H4" value="187.1395717133806" />
+      <entry key="D1" value="268.253354659319" />
+      <entry key="W1" value="285.9266880305439" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000000943299128" />
-      <entry key="S5" value="1.002187391202354" />
-      <entry key="S10" value="1.0652635749113806" />
-      <entry key="S30" value="1.6383054918397493" />
-      <entry key="S60" value="2.1810401785820974" />
-      <entry key="M2" value="2.892369453495359" />
-      <entry key="M5" value="4.582521250997742" />
-      <entry key="M10" value="7.291246320291547" />
-      <entry key="M15" value="9.88552526058903" />
-      <entry key="M30" value="16.979638783466655" />
-      <entry key="H1" value="27.49487151719937" />
-      <entry key="H2" value="38.410784885167445" />
-      <entry key="H4" value="46.72031568815475" />
-      <entry key="D1" value="55.86608444098004" />
-      <entry key="W1" value="57.688189712148805" />
+      <entry key="MS500" value="1.0002686494889084" />
+      <entry key="S2" value="1.135000665326713" />
+      <entry key="S5" value="1.5766837229995907" />
+      <entry key="S10" value="2.034967774333495" />
+      <entry key="S30" value="2.7760643144636266" />
+      <entry key="S60" value="3.3909436536057616" />
+      <entry key="M2" value="3.9911287496240164" />
+      <entry key="M5" value="4.5656689813372395" />
+      <entry key="M10" value="5.446061615369802" />
+      <entry key="M15" value="6.9724291991923" />
+      <entry key="M30" value="13.135746639847056" />
+      <entry key="H1" value="24.824481557341652" />
+      <entry key="H2" value="39.10831057392734" />
+      <entry key="H4" value="51.182554526478064" />
+      <entry key="D1" value="65.51241219471937" />
+      <entry key="W1" value="68.48713392929739" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.5666820038609663E-4" />
-      <entry key="MS500" value="0.17337887114142314" />
-      <entry key="S2" value="0.6452813249147549" />
-      <entry key="S5" value="0.8409657259454875" />
-      <entry key="S10" value="0.9701908766184195" />
-      <entry key="S30" value="1.5610879130657953" />
-      <entry key="S60" value="2.1666819974999605" />
-      <entry key="M2" value="4.306659193786101" />
-      <entry key="M5" value="16.103869282382036" />
-      <entry key="M10" value="31.227357477346334" />
-      <entry key="M15" value="42.5473822335673" />
-      <entry key="M30" value="73.34430807716492" />
-      <entry key="H1" value="129.21677115606136" />
-      <entry key="H2" value="198.82838324780565" />
-      <entry key="H4" value="257.73335189140596" />
-      <entry key="D1" value="327.1918105884404" />
-      <entry key="W1" value="341.53079423258316" />
+      <entry key="MS100" value="7.00173460945228E-4" />
+      <entry key="MS500" value="0.23393056017802785" />
+      <entry key="S2" value="0.7709187819392976" />
+      <entry key="S5" value="1.330936058957441" />
+      <entry key="S10" value="1.86629606055833" />
+      <entry key="S30" value="2.701102126572643" />
+      <entry key="S60" value="3.349142578923199" />
+      <entry key="M2" value="3.9686577903210982" />
+      <entry key="M5" value="4.606370539844589" />
+      <entry key="M10" value="6.681436634584493" />
+      <entry key="M15" value="11.385439894842676" />
+      <entry key="M30" value="33.68505727510637" />
+      <entry key="H1" value="86.18801251762952" />
+      <entry key="H2" value="164.09508737900336" />
+      <entry key="H4" value="238.31460284820662" />
+      <entry key="D1" value="333.76417428834253" />
+      <entry key="W1" value="354.4135844811326" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -146,7 +146,7 @@
       <option name="presentableId" value="Default" />
       <updated>1780314566780</updated>
       <workItem from="1780314569489" duration="1534000" />
-      <workItem from="1780316156789" duration="13519000" />
+      <workItem from="1780316156789" duration="16384000" />
     </task>
     <task id="LOCAL-00001" summary="Add IntelliJ IDEA project configuration files to version control">
       <option name="closed" value="true" />
@@ -372,7 +372,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780329261814</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Add edit functionality to `ListVideoGames` and create form in `EditVideoGame`">
+      <option name="closed" value="true" />
+      <created>1780329795644</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1780329795644</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +410,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add initial project setup with Angular, Prettier, and VS Code configurations" />
     <MESSAGE value="Set up initial 'ludotheque' (ldk) project&#10;&#10;Angular application with routing, basic structure, and placeholder content" />
     <MESSAGE value="Update workspace configuration for IntelliJ IDEA" />
     <MESSAGE value="Remove placeholder content and clean up project structure" />
@@ -427,6 +434,7 @@
     <MESSAGE value="Extract `TableVideoGame` component and integrate it into `ListVideoGames` for video game list rendering&#10;&#10;example of a Dummy Component" />
     <MESSAGE value="Add `toEdit` output to `TableVideoGame` and bind it in `ListVideoGames` component" />
     <MESSAGE value="Convert `TableVideoGame` to use a table layout and add an edit button feature&#10;&#10;demonstrate how to emit signals for parents" />
-    <option name="LAST_COMMIT_MESSAGE" value="Convert `TableVideoGame` to use a table layout and add an edit button feature&#10;&#10;demonstrate how to emit signals for parents" />
+    <MESSAGE value="Add edit functionality to `ListVideoGames` and create form in `EditVideoGame`" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add edit functionality to `ListVideoGames` and create form in `EditVideoGame`" />
   </component>
 </project>

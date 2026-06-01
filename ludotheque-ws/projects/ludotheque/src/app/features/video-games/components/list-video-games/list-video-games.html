@@ -11,6 +11,9 @@
   />
 }
 
-@if (videoGameToBeEditable()) {
-  <ldk-edit-video-game />
+@let videoGameToEdit = videoGameToBeEditable();
+@if (videoGameToEdit) {
+  <ldk-edit-video-game
+    [videoGame]="videoGameToEdit"
+  />
 }
