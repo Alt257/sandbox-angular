@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Add initial `ListVideoGames` feature component with basic structure and tests">
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/app.routes.ts" afterDir="false" />
+    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Add routes for `Home` component and redirect root path to `home`">
+      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,60 +31,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.154248216744266E-109" />
-      <entry key="S2" value="3.50861103965231E-27" />
-      <entry key="S5" value="1.687071703831375E-10" />
-      <entry key="S10" value="7.384668395302815E-5" />
-      <entry key="S30" value="0.5180255064406901" />
-      <entry key="S60" value="5.003111232291601" />
-      <entry key="M2" value="15.75943853082276" />
-      <entry key="M5" value="33.46534926832853" />
-      <entry key="M10" value="50.68476272216638" />
-      <entry key="M15" value="62.72165311063045" />
-      <entry key="M30" value="82.68042043540231" />
-      <entry key="H1" value="97.71270576619237" />
-      <entry key="H2" value="107.07922980797625" />
-      <entry key="H4" value="112.32765349197196" />
-      <entry key="D1" value="117.02352496081619" />
-      <entry key="W1" value="117.85971982486129" />
+      <entry key="MS500" value="4.2498869014764506E-275" />
+      <entry key="S2" value="1.3398307334688073E-68" />
+      <entry key="S5" value="3.678059297433675E-27" />
+      <entry key="S10" value="2.922023666701048E-13" />
+      <entry key="S30" value="7.509483137917443E-4" />
+      <entry key="S60" value="0.18639758487911345" />
+      <entry key="M2" value="3.0143548299601797" />
+      <entry key="M5" value="17.910426629951118" />
+      <entry key="M10" value="40.516399580954584" />
+      <entry key="M15" value="59.2178117174079" />
+      <entry key="M30" value="96.29198929232766" />
+      <entry key="H1" value="129.58635210293005" />
+      <entry key="H2" value="152.71717595485705" />
+      <entry key="H4" value="166.47990521982706" />
+      <entry key="D1" value="179.28056118128146" />
+      <entry key="W1" value="181.60810710707548" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000015973057281" />
-      <entry key="S2" value="1.0632189115625668" />
-      <entry key="S5" value="1.3315448525163176" />
-      <entry key="S10" value="1.588126616939134" />
-      <entry key="S30" value="2.0637342480769827" />
-      <entry key="S60" value="2.4003775081914496" />
-      <entry key="M2" value="2.8005336180513836" />
-      <entry key="M5" value="3.9086892692649444" />
-      <entry key="M10" value="5.066066876886977" />
-      <entry key="M15" value="5.719587326170778" />
-      <entry key="M30" value="6.636619870048324" />
-      <entry key="H1" value="7.245768813169412" />
-      <entry key="H2" value="7.601981976321595" />
-      <entry key="H4" value="7.795365019718494" />
-      <entry key="D1" value="7.9650758938958806" />
-      <entry key="W1" value="7.9949903004826535" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000001956038" />
+      <entry key="S60" value="1.0000280454270922" />
+      <entry key="M2" value="1.0119965907813948" />
+      <entry key="M5" value="1.558653110697208" />
+      <entry key="M10" value="3.368194905722804" />
+      <entry key="M15" value="5.012343456879853" />
+      <entry key="M30" value="8.046703699709136" />
+      <entry key="H1" value="10.502632851917518" />
+      <entry key="H2" value="12.092987869671685" />
+      <entry key="H4" value="13.00261844640775" />
+      <entry key="D1" value="13.82726751760978" />
+      <entry key="W1" value="13.975159038772746" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0029399350535372405" />
-      <entry key="MS500" value="0.31165106997814135" />
-      <entry key="S2" value="0.7768017435457137" />
-      <entry key="S5" value="1.1347396972030583" />
-      <entry key="S10" value="1.4440101537400356" />
-      <entry key="S30" value="2.469512992613406" />
-      <entry key="S60" value="7.312040461374583" />
-      <entry key="M2" value="18.49474112338779" />
-      <entry key="M5" value="37.334656486291124" />
-      <entry key="M10" value="55.725763649164946" />
-      <entry key="M15" value="68.42275751641995" />
-      <entry key="M30" value="89.30668372623214" />
-      <entry key="H1" value="104.95296140589035" />
-      <entry key="H2" value="114.67836291317644" />
-      <entry key="H4" value="120.1215698144999" />
-      <entry key="D1" value="124.98835592817231" />
-      <entry key="W1" value="125.85467504924247" />
+      <entry key="MS100" value="5.531659596170888E-4" />
+      <entry key="MS500" value="0.22313674286824417" />
+      <entry key="S2" value="0.6872943477860145" />
+      <entry key="S5" value="0.8607105156264955" />
+      <entry key="S10" value="0.9277448548103284" />
+      <entry key="S30" value="0.9760610586109688" />
+      <entry key="S60" value="1.173950394800512" />
+      <entry key="M2" value="4.019544802138497" />
+      <entry key="M5" value="19.46336697336161" />
+      <entry key="M10" value="43.87647876168275" />
+      <entry key="M15" value="64.22125038253472" />
+      <entry key="M30" value="104.33088100179569" />
+      <entry key="H1" value="140.08370172386353" />
+      <entry key="H2" value="164.80707694322297" />
+      <entry key="H4" value="179.48085330453594" />
+      <entry key="D1" value="193.10753118521532" />
+      <entry key="W1" value="195.58322315494726" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -137,7 +137,7 @@
       <option name="presentableId" value="Default" />
       <updated>1780314566780</updated>
       <workItem from="1780314569489" duration="1534000" />
-      <workItem from="1780316156789" duration="5001000" />
+      <workItem from="1780316156789" duration="6346000" />
     </task>
     <task id="LOCAL-00001" summary="Add IntelliJ IDEA project configuration files to version control">
       <option name="closed" value="true" />
@@ -227,7 +227,31 @@
       <option name="project" value="LOCAL" />
       <updated>1780320915737</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add route for `ListVideoGames` feature component">
+      <option name="closed" value="true" />
+      <created>1780321200055</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1780321200055</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add initial `Home` component with basic structure and tests">
+      <option name="closed" value="true" />
+      <created>1780321348361</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1780321348361</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add routes for `Home` component and redirect root path to `home`">
+      <option name="closed" value="true" />
+      <created>1780321620095</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1780321620095</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +294,9 @@
     <MESSAGE value="Add initial `MainMenu` component with basic structure and tests" />
     <MESSAGE value="Integrate `MainMenu` component into app with routing links and update `app.html`." />
     <MESSAGE value="Add initial `ListVideoGames` feature component with basic structure and tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add initial `ListVideoGames` feature component with basic structure and tests" />
+    <MESSAGE value="Add route for `ListVideoGames` feature component" />
+    <MESSAGE value="Add initial `Home` component with basic structure and tests" />
+    <MESSAGE value="Add routes for `Home` component and redirect root path to `home`" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add routes for `Home` component and redirect root path to `home`" />
   </component>
 </project>
