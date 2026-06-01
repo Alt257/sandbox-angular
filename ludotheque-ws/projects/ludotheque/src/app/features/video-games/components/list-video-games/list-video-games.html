@@ -1,5 +1,13 @@
-@let videoGames = videoGamesResponse$ | async;
+@let videoGamesResponse = videoGamesResponse$ | async;
 
 <h1>{{ title() }}</h1>
 
 <button (click)="changeTitle()">Changer le titre</button>
+
+@if (videoGamesResponse) {
+  <ul>
+  @for (videoGame of videoGamesResponse.results; track videoGame.title) {
+    <li>{{ videoGame.title }}</li>
+  }
+  </ul>
+}
