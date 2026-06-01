@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Add initial workspace setup with Angular (mono repository), Prettier, and VS Code configurations">
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/tsconfig.json" afterDir="false" />
+    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Set up initial 'ludotheque' (ldk) project&#10;&#10;Angular application with routing, basic structure, and placeholder content">
+      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/app.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +27,65 @@
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="2.0742634525130397" />
+      <entry key="MS500" value="4.412634925934782" />
+      <entry key="S2" value="6.8179214575933464" />
+      <entry key="S5" value="7.935431561456615" />
+      <entry key="S10" value="8.427027586892995" />
+      <entry key="S30" value="8.798949205324764" />
+      <entry key="S60" value="8.898147213391635" />
+      <entry key="M2" value="8.948736263588252" />
+      <entry key="M5" value="8.979412828548007" />
+      <entry key="M10" value="8.989692741446433" />
+      <entry key="M15" value="8.99312545142929" />
+      <entry key="M30" value="8.996561203163305" />
+      <entry key="H1" value="8.998280220734197" />
+      <entry key="H2" value="8.999140015129017" />
+      <entry key="H4" value="8.999569983751712" />
+      <entry key="D1" value="8.999928327317674" />
+      <entry key="W1" value="8.999989760964375" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="2.0278751471183747" />
+      <entry key="MS500" value="4.3900163412452144" />
+      <entry key="S2" value="6.808630189268818" />
+      <entry key="S5" value="7.930998725738055" />
+      <entry key="S10" value="8.424651051943593" />
+      <entry key="S30" value="8.798116380422933" />
+      <entry key="S60" value="8.897725363087364" />
+      <entry key="M2" value="8.948523950520043" />
+      <entry key="M5" value="8.979327566505106" />
+      <entry key="M10" value="8.989650053976272" />
+      <entry key="M15" value="8.993096980548412" />
+      <entry key="M30" value="8.996546961433316" />
+      <entry key="H1" value="8.998273098295721" />
+      <entry key="H2" value="8.999136453516273" />
+      <entry key="H4" value="8.999568202846943" />
+      <entry key="D1" value="8.999928030486544" />
+      <entry key="W1" value="8.999989718559595" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1,
@@ -62,6 +118,7 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
     "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "D:\\dev\\sandbox\\Angular-npx-cours-dev-curieux\\ludotheque-ws\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -80,7 +137,7 @@
       <option name="presentableId" value="Default" />
       <updated>1780314566780</updated>
       <workItem from="1780314569489" duration="1534000" />
-      <workItem from="1780316156789" duration="996000" />
+      <workItem from="1780316156789" duration="2614000" />
     </task>
     <task id="LOCAL-00001" summary="Add IntelliJ IDEA project configuration files to version control">
       <option name="closed" value="true" />
@@ -98,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780316394856</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Set up initial 'ludotheque' (ldk) project&#10;&#10;Angular application with routing, basic structure, and placeholder content">
+      <option name="closed" value="true" />
+      <created>1780317225613</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1780317225613</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +174,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev/ludotheque" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -120,6 +197,8 @@
     <MESSAGE value="Add initial workspace setup with Angular (mono repository), Prettier, and VS Code configurations" />
     <MESSAGE value="#INITIAL&#10;&#10;Add IntelliJ IDEA project configuration files to version control" />
     <MESSAGE value="Add initial workspace setup with Angular (mono repository), Prettier, and VS Code configurations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add initial workspace setup with Angular (mono repository), Prettier, and VS Code configurations" />
+    <MESSAGE value="Add initial project setup with Angular, Prettier, and VS Code configurations" />
+    <MESSAGE value="Set up initial 'ludotheque' (ldk) project&#10;&#10;Angular application with routing, basic structure, and placeholder content" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up initial 'ludotheque' (ldk) project&#10;&#10;Angular application with routing, basic structure, and placeholder content" />
   </component>
 </project>
