@@ -1,4 +1,4 @@
-import {Component, inject} from '@angular/core';
+import {Component, inject, signal} from '@angular/core';
 import {GetAllVideoGames} from '../../services/get-all-video-games';
 
 @Component({
@@ -10,4 +10,9 @@ import {GetAllVideoGames} from '../../services/get-all-video-games';
 export class ListVideoGames {
   private readonly getAllVideoGames = inject(GetAllVideoGames);
   private readonly videoGames$ = this.getAllVideoGames.getAll();
+  readonly title = signal('Mes jeux');
+
+  protected changeTitle() {
+    this.title.set('Mes jeux-vidéos');
+  }
 }

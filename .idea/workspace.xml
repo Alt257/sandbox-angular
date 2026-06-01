@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Add `getAll` method to `GetAllVideoGames` service with `HttpClient` injection">
+    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Inject `getAllVideoGames` observable into `ListVideoGames` component">
+      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.html" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,60 +39,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.5752771057916413E-228" />
-      <entry key="S2" value="1.1203126512431766E-57" />
-      <entry key="S5" value="1.658577219720931E-23" />
-      <entry key="S10" value="4.072563344775537E-12" />
-      <entry key="S30" value="1.596942658986167E-4" />
-      <entry key="S60" value="0.01264095954222719" />
-      <entry key="M2" value="0.11681853112903896" />
-      <entry key="M5" value="1.5398538400252633" />
-      <entry key="M10" value="10.697229048595622" />
-      <entry key="M15" value="24.115160749907577" />
-      <entry key="M30" value="61.44685174638663" />
-      <entry key="H1" value="103.9676217998235" />
-      <entry key="H2" value="137.5055948102755" />
-      <entry key="H4" value="158.8273228473335" />
-      <entry key="D1" value="179.50599958518086" />
-      <entry key="W1" value="183.35024185805972" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="3.93249962314054E-112" />
+      <entry key="S5" value="2.7407377134470584E-45" />
+      <entry key="S10" value="5.23520554844512E-23" />
+      <entry key="S30" value="3.740915963700953E-8" />
+      <entry key="S60" value="1.934747777013356E-4" />
+      <entry key="M2" value="0.014452197857241857" />
+      <entry key="M5" value="0.6674955325682406" />
+      <entry key="M10" value="7.042968183787214" />
+      <entry key="M15" value="18.25071075380636" />
+      <entry key="M30" value="53.45575244176206" />
+      <entry key="H1" value="96.97181294941251" />
+      <entry key="H2" value="132.79877584428547" />
+      <entry key="H4" value="156.08532280994325" />
+      <entry key="D1" value="178.98574497742808" />
+      <entry key="W1" value="183.27423365075322" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.00000000035536" />
-      <entry key="MS500" value="1.0128864616970326" />
-      <entry key="S2" value="1.3369251433407556" />
-      <entry key="S5" value="1.6471625368006397" />
-      <entry key="S10" value="1.8044641302152593" />
-      <entry key="S30" value="1.930239985642698" />
-      <entry key="S60" value="1.990733678218651" />
-      <entry key="M2" value="2.3468550050831425" />
-      <entry key="M5" value="4.176840135407746" />
-      <entry key="M10" value="6.799659167034322" />
-      <entry key="M15" value="8.939896773684065" />
-      <entry key="M30" value="13.310700438289775" />
-      <entry key="H1" value="17.380183456832455" />
-      <entry key="H2" value="20.273051589623908" />
-      <entry key="H4" value="22.016298824706926" />
-      <entry key="D1" value="23.651108700765242" />
-      <entry key="W1" value="23.94968859505483" />
+      <entry key="MS100" value="1.0000000000143516" />
+      <entry key="MS500" value="1.006782345528133" />
+      <entry key="S2" value="1.2869756034637505" />
+      <entry key="S5" value="1.6069292397982144" />
+      <entry key="S10" value="1.7793686945281548" />
+      <entry key="S30" value="1.9884304025904842" />
+      <entry key="S60" value="2.25015879743254" />
+      <entry key="M2" value="2.7800909717020867" />
+      <entry key="M5" value="4.566377359443271" />
+      <entry key="M10" value="7.34680954673848" />
+      <entry key="M15" value="9.677290373428155" />
+      <entry key="M30" value="14.534417150433645" />
+      <entry key="H1" value="19.18783341922846" />
+      <entry key="H2" value="22.567609307176006" />
+      <entry key="H4" value="24.630445408829388" />
+      <entry key="D1" value="26.581598964822014" />
+      <entry key="W1" value="26.939622617269993" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.7900413120605254" />
-      <entry key="MS500" value="0.9654135877130989" />
-      <entry key="S2" value="1.315430169364485" />
-      <entry key="S5" value="1.6348791391230388" />
-      <entry key="S10" value="1.797384437461484" />
-      <entry key="S30" value="1.927740427586684" />
-      <entry key="S60" value="1.9998116022596026" />
-      <entry key="M2" value="2.4516348836432034" />
-      <entry key="M5" value="5.695900168216202" />
-      <entry key="M10" value="17.477478008022825" />
-      <entry key="M15" value="33.03758440182192" />
-      <entry key="M30" value="74.74419427342573" />
-      <entry key="H1" value="121.33895094563981" />
-      <entry key="H2" value="157.77344203091545" />
-      <entry key="H4" value="180.84078496621603" />
-      <entry key="D1" value="203.1565988340712" />
-      <entry key="W1" value="207.2998567175835" />
+      <entry key="MS100" value="7.27777106177782E-7" />
+      <entry key="MS500" value="0.06039144550213524" />
+      <entry key="S2" value="0.6786598933145233" />
+      <entry key="S5" value="1.263358892849482" />
+      <entry key="S10" value="1.5823439895067395" />
+      <entry key="S30" value="1.914351414485643" />
+      <entry key="S60" value="2.209980999207868" />
+      <entry key="M2" value="2.7711279365342376" />
+      <entry key="M5" value="5.215408474680544" />
+      <entry key="M10" value="14.372128033907748" />
+      <entry key="M15" value="27.911495434555313" />
+      <entry key="M30" value="67.9768897224185" />
+      <entry key="H1" value="116.15055356830649" />
+      <entry key="H2" value="155.3609405909212" />
+      <entry key="H4" value="180.7127710157875" />
+      <entry key="D1" value="205.566801013122" />
+      <entry key="W1" value="210.2137775686295" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -144,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1780314566780</updated>
       <workItem from="1780314569489" duration="1534000" />
-      <workItem from="1780316156789" duration="7589000" />
+      <workItem from="1780316156789" duration="7973000" />
     </task>
     <task id="LOCAL-00001" summary="Add IntelliJ IDEA project configuration files to version control">
       <option name="closed" value="true" />
@@ -290,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780323447478</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Inject `getAllVideoGames` observable into `ListVideoGames` component">
+      <option name="closed" value="true" />
+      <created>1780323794383</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1780323794383</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,6 +349,7 @@
     <MESSAGE value="Add `provideHttpClient` to app configuration" />
     <MESSAGE value="Add `VideoGame` model and `VideoGameResponse` type definitions" />
     <MESSAGE value="Add `getAll` method to `GetAllVideoGames` service with `HttpClient` injection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add `getAll` method to `GetAllVideoGames` service with `HttpClient` injection" />
+    <MESSAGE value="Inject `getAllVideoGames` observable into `ListVideoGames` component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inject `getAllVideoGames` observable into `ListVideoGames` component" />
   </component>
 </project>
