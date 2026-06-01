@@ -3,12 +3,14 @@ import {GetAllVideoGames} from '../../services/get-all-video-games';
 import {AsyncPipe} from '@angular/common';
 import {TableVideoGame} from '../table-video-game/table-video-game';
 import {VideoGame} from '../../models/video-game';
+import {EditVideoGame} from '../edit-video-game/edit-video-game';
 
 @Component({
   selector: 'ldk-list-video-games',
   imports: [
     AsyncPipe,
-    TableVideoGame
+    TableVideoGame,
+    EditVideoGame
   ],
   templateUrl: './list-video-games.html',
   styleUrl: './list-video-games.css',

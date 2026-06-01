@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Add `toEdit` output to `TableVideoGame` and bind it in `ListVideoGames` component">
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/table-video-game/table-video-game.html" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/table-video-game/table-video-game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/table-video-game/table-video-game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/table-video-game/table-video-game.ts" afterDir="false" />
+    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Convert `TableVideoGame` to use a table layout and add an edit button feature&#10;&#10;demonstrate how to emit signals for parents">
+      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.html" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,61 +38,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.596813364676269E-39" />
-      <entry key="MS500" value="1.7404070416288335E-8" />
-      <entry key="S2" value="0.011485838565539383" />
-      <entry key="S5" value="0.16751939220908818" />
-      <entry key="S10" value="0.40933722498070657" />
-      <entry key="S30" value="0.7782716642197883" />
-      <entry key="S60" value="1.0508888109297052" />
-      <entry key="M2" value="1.3651775013728837" />
-      <entry key="M5" value="1.8950629625333228" />
-      <entry key="M10" value="4.674344681768734" />
-      <entry key="M15" value="9.829650947911736" />
-      <entry key="M30" value="31.45928575483786" />
-      <entry key="H1" value="76.14904713880763" />
-      <entry key="H2" value="131.11704839148274" />
-      <entry key="H4" value="176.39353984169153" />
-      <entry key="D1" value="228.55092867070576" />
-      <entry key="W1" value="239.17504469318558" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="7.988772838430425E-82" />
+      <entry key="S2" value="2.770017903886557E-20" />
+      <entry key="S5" value="8.483930891636973E-8" />
+      <entry key="S10" value="0.0016271495210722616" />
+      <entry key="S30" value="1.4154534960937541" />
+      <entry key="S60" value="7.929261685645575" />
+      <entry key="M2" value="18.88847197836824" />
+      <entry key="M5" value="32.18011489620564" />
+      <entry key="M10" value="39.9924002062958" />
+      <entry key="M15" value="45.98927664595084" />
+      <entry key="M30" value="66.88318803155722" />
+      <entry key="H1" value="110.8060805980958" />
+      <entry key="H2" value="167.42615197357657" />
+      <entry key="H4" value="215.57278983051992" />
+      <entry key="D1" value="272.2941263170075" />
+      <entry key="W1" value="283.9871062770808" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000015173663583" />
-      <entry key="S2" value="1.0360840456689973" />
-      <entry key="S5" value="1.331357628746184" />
-      <entry key="S10" value="1.844838318360229" />
-      <entry key="S30" value="2.9638308014190984" />
-      <entry key="S60" value="3.798148088615422" />
-      <entry key="M2" value="4.716907889620103" />
-      <entry key="M5" value="6.338335971636887" />
-      <entry key="M10" value="8.673012766697376" />
-      <entry key="M15" value="10.959373267384711" />
-      <entry key="M30" value="17.43543131873479" />
-      <entry key="H1" value="26.845662824845704" />
-      <entry key="H2" value="36.16062085487041" />
-      <entry key="H4" value="42.99674627243474" />
-      <entry key="D1" value="50.31815713853364" />
-      <entry key="W1" value="51.75482443698163" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.000000748806567" />
+      <entry key="S60" value="1.001909105867522" />
+      <entry key="M2" value="1.105751480200014" />
+      <entry key="M5" value="2.387480472472695" />
+      <entry key="M10" value="5.057848209885369" />
+      <entry key="M15" value="7.604950899760596" />
+      <entry key="M30" value="14.535510270655301" />
+      <entry key="H1" value="24.653482988977366" />
+      <entry key="H2" value="34.94269820883642" />
+      <entry key="H4" value="42.65727279272216" />
+      <entry key="D1" value="51.05344042341521" />
+      <entry key="W1" value="52.715840049693306" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.887733533646291E-4" />
-      <entry key="MS500" value="0.22593823825030784" />
-      <entry key="S2" value="0.7075215533496867" />
-      <entry key="S5" value="1.1928442116364786" />
-      <entry key="S10" value="1.9604189308285402" />
-      <entry key="S30" value="3.56083447323293" />
-      <entry key="S60" value="4.724777028997114" />
-      <entry key="M2" value="5.99977328630567" />
-      <entry key="M5" value="8.19004219587289" />
-      <entry key="M10" value="13.319517546049838" />
-      <entry key="M15" value="20.765905540587422" />
-      <entry key="M30" value="48.87623272968978" />
-      <entry key="H1" value="102.98038654739675" />
-      <entry key="H2" value="167.26800209354207" />
-      <entry key="H4" value="219.38453552298557" />
-      <entry key="D1" value="278.86796395118773" />
-      <entry key="W1" value="290.9297042871276" />
+      <entry key="MS100" value="7.682461166814563E-6" />
+      <entry key="MS500" value="0.09486370331087836" />
+      <entry key="S2" value="0.5549770430940716" />
+      <entry key="S5" value="0.790150927214513" />
+      <entry key="S10" value="0.8905304324964143" />
+      <entry key="S30" value="2.376494941833681" />
+      <entry key="S60" value="8.910218984120588" />
+      <entry key="M2" value="19.980789567836265" />
+      <entry key="M5" value="34.55291953653172" />
+      <entry key="M10" value="45.03450029471795" />
+      <entry key="M15" value="53.57844675034497" />
+      <entry key="M30" value="81.40340729866416" />
+      <entry key="H1" value="135.44646821235605" />
+      <entry key="H2" value="202.35953723936828" />
+      <entry key="H4" value="258.2243715223515" />
+      <entry key="D1" value="323.34643080038313" />
+      <entry key="W1" value="336.7027787520477" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -145,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1780314566780</updated>
       <workItem from="1780314569489" duration="1534000" />
-      <workItem from="1780316156789" duration="12582000" />
+      <workItem from="1780316156789" duration="13028000" />
     </task>
     <task id="LOCAL-00001" summary="Add IntelliJ IDEA project configuration files to version control">
       <option name="closed" value="true" />
@@ -355,7 +355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780328107761</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Convert `TableVideoGame` to use a table layout and add an edit button feature&#10;&#10;demonstrate how to emit signals for parents">
+      <option name="closed" value="true" />
+      <created>1780328862755</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1780328862755</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +393,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add initial workspace setup with Angular (mono repository), Prettier, and VS Code configurations" />
     <MESSAGE value="Add initial project setup with Angular, Prettier, and VS Code configurations" />
     <MESSAGE value="Set up initial 'ludotheque' (ldk) project&#10;&#10;Angular application with routing, basic structure, and placeholder content" />
     <MESSAGE value="Update workspace configuration for IntelliJ IDEA" />
@@ -410,6 +417,7 @@
     <MESSAGE value="Extract `TableVideoGame` component and integrate it into `ListVideoGames` for video game list rendering" />
     <MESSAGE value="Extract `TableVideoGame` component and integrate it into `ListVideoGames` for video game list rendering&#10;&#10;example of a Dummy Component" />
     <MESSAGE value="Add `toEdit` output to `TableVideoGame` and bind it in `ListVideoGames` component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add `toEdit` output to `TableVideoGame` and bind it in `ListVideoGames` component" />
+    <MESSAGE value="Convert `TableVideoGame` to use a table layout and add an edit button feature&#10;&#10;demonstrate how to emit signals for parents" />
+    <option name="LAST_COMMIT_MESSAGE" value="Convert `TableVideoGame` to use a table layout and add an edit button feature&#10;&#10;demonstrate how to emit signals for parents" />
   </component>
 </project>
