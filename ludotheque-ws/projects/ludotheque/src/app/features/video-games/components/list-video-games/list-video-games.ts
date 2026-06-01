@@ -13,7 +13,7 @@ import {AsyncPipe} from '@angular/common';
 export class ListVideoGames {
   private readonly getAllVideoGames = inject(GetAllVideoGames);
 
-  protected readonly videoGames$ = this.getAllVideoGames.getAll();
+  protected readonly videoGamesResponse$ = this.getAllVideoGames.getAll();
   protected readonly title = signal('Mes jeux');
 
   protected changeTitle() {
