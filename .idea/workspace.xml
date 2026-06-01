@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Extract `TableVideoGame` component and integrate it into `ListVideoGames` for video game list rendering&#10;&#10;example of a Dummy Component">
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.html" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.ts" afterDir="false" />
+    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Add `toEdit` output to `TableVideoGame` and bind it in `ListVideoGames` component">
+      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/table-video-game/table-video-game.html" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/table-video-game/table-video-game.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/table-video-game/table-video-game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/table-video-game/table-video-game.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,61 +38,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="2.6471806198413137E-91" />
-      <entry key="S5" value="5.876428141680174E-37" />
-      <entry key="S10" value="7.665786418678891E-19" />
-      <entry key="S30" value="9.152060976700404E-7" />
-      <entry key="S60" value="9.566738062421559E-4" />
-      <entry key="M2" value="0.03127614452798731" />
-      <entry key="M5" value="0.6333233375432787" />
-      <entry key="M10" value="4.964639526918097" />
-      <entry key="M15" value="11.522066547916488" />
-      <entry key="M30" value="35.5483854946871" />
-      <entry key="H1" value="81.40389786256321" />
-      <entry key="H2" value="135.27468490395293" />
-      <entry key="H4" value="178.50088250513866" />
-      <entry key="D1" value="227.43124522468145" />
-      <entry key="W1" value="237.30647461909447" />
+      <entry key="MS100" value="1.596813364676269E-39" />
+      <entry key="MS500" value="1.7404070416288335E-8" />
+      <entry key="S2" value="0.011485838565539383" />
+      <entry key="S5" value="0.16751939220908818" />
+      <entry key="S10" value="0.40933722498070657" />
+      <entry key="S30" value="0.7782716642197883" />
+      <entry key="S60" value="1.0508888109297052" />
+      <entry key="M2" value="1.3651775013728837" />
+      <entry key="M5" value="1.8950629625333228" />
+      <entry key="M10" value="4.674344681768734" />
+      <entry key="M15" value="9.829650947911736" />
+      <entry key="M30" value="31.45928575483786" />
+      <entry key="H1" value="76.14904713880763" />
+      <entry key="H2" value="131.11704839148274" />
+      <entry key="H4" value="176.39353984169153" />
+      <entry key="D1" value="228.55092867070576" />
+      <entry key="W1" value="239.17504469318558" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000000000000735" />
-      <entry key="MS500" value="1.002361632179362" />
-      <entry key="S2" value="1.2204464271487745" />
-      <entry key="S5" value="1.5461616800538276" />
-      <entry key="S10" value="1.7390275232045336" />
-      <entry key="S30" value="1.9041115792752992" />
-      <entry key="S60" value="1.9536635829289182" />
-      <entry key="M2" value="2.0701776259775038" />
-      <entry key="M5" value="3.070317333161716" />
-      <entry key="M10" value="5.288468718616811" />
-      <entry key="M15" value="7.542874634937064" />
-      <entry key="M30" value="13.920021337133608" />
-      <entry key="H1" value="22.944394996799836" />
-      <entry key="H2" value="31.628121499811247" />
-      <entry key="H4" value="37.88253177269359" />
-      <entry key="D1" value="44.49275096507101" />
-      <entry key="W1" value="45.78051958938813" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000015173663583" />
+      <entry key="S2" value="1.0360840456689973" />
+      <entry key="S5" value="1.331357628746184" />
+      <entry key="S10" value="1.844838318360229" />
+      <entry key="S30" value="2.9638308014190984" />
+      <entry key="S60" value="3.798148088615422" />
+      <entry key="M2" value="4.716907889620103" />
+      <entry key="M5" value="6.338335971636887" />
+      <entry key="M10" value="8.673012766697376" />
+      <entry key="M15" value="10.959373267384711" />
+      <entry key="M30" value="17.43543131873479" />
+      <entry key="H1" value="26.845662824845704" />
+      <entry key="H2" value="36.16062085487041" />
+      <entry key="H4" value="42.99674627243474" />
+      <entry key="D1" value="50.31815713853364" />
+      <entry key="W1" value="51.75482443698163" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0010394240063022534" />
-      <entry key="MS500" value="0.2538178434253722" />
-      <entry key="S2" value="0.8707479741586371" />
-      <entry key="S5" value="1.3538027856859964" />
-      <entry key="S10" value="1.6279965289179674" />
-      <entry key="S30" value="1.8628897416737045" />
-      <entry key="S60" value="1.9333734213567642" />
-      <entry key="M2" value="2.090110999687823" />
-      <entry key="M5" value="3.695896403759774" />
-      <entry key="M10" value="10.243322592657737" />
-      <entry key="M15" value="19.05356489190206" />
-      <entry key="M30" value="49.45562915036779" />
-      <entry key="H1" value="104.33696246596494" />
-      <entry key="H2" value="166.89479027125628" />
-      <entry key="H4" value="216.3785637523178" />
-      <entry key="D1" value="271.92303976733217" />
-      <entry key="W1" value="283.08685346296505" />
+      <entry key="MS100" value="5.887733533646291E-4" />
+      <entry key="MS500" value="0.22593823825030784" />
+      <entry key="S2" value="0.7075215533496867" />
+      <entry key="S5" value="1.1928442116364786" />
+      <entry key="S10" value="1.9604189308285402" />
+      <entry key="S30" value="3.56083447323293" />
+      <entry key="S60" value="4.724777028997114" />
+      <entry key="M2" value="5.99977328630567" />
+      <entry key="M5" value="8.19004219587289" />
+      <entry key="M10" value="13.319517546049838" />
+      <entry key="M15" value="20.765905540587422" />
+      <entry key="M30" value="48.87623272968978" />
+      <entry key="H1" value="102.98038654739675" />
+      <entry key="H2" value="167.26800209354207" />
+      <entry key="H4" value="219.38453552298557" />
+      <entry key="D1" value="278.86796395118773" />
+      <entry key="W1" value="290.9297042871276" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -146,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1780314566780</updated>
       <workItem from="1780314569489" duration="1534000" />
-      <workItem from="1780316156789" duration="11877000" />
+      <workItem from="1780316156789" duration="12582000" />
     </task>
     <task id="LOCAL-00001" summary="Add IntelliJ IDEA project configuration files to version control">
       <option name="closed" value="true" />
@@ -348,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780327092901</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Add `toEdit` output to `TableVideoGame` and bind it in `ListVideoGames` component">
+      <option name="closed" value="true" />
+      <created>1780328107761</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1780328107761</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +385,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="#INITIAL&#10;&#10;Add IntelliJ IDEA project configuration files to version control" />
     <MESSAGE value="Add initial workspace setup with Angular (mono repository), Prettier, and VS Code configurations" />
     <MESSAGE value="Add initial project setup with Angular, Prettier, and VS Code configurations" />
     <MESSAGE value="Set up initial 'ludotheque' (ldk) project&#10;&#10;Angular application with routing, basic structure, and placeholder content" />
@@ -403,6 +409,7 @@
     <MESSAGE value="Render list of video games from `videoGamesResponse` in `ListVideoGames` component" />
     <MESSAGE value="Extract `TableVideoGame` component and integrate it into `ListVideoGames` for video game list rendering" />
     <MESSAGE value="Extract `TableVideoGame` component and integrate it into `ListVideoGames` for video game list rendering&#10;&#10;example of a Dummy Component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extract `TableVideoGame` component and integrate it into `ListVideoGames` for video game list rendering&#10;&#10;example of a Dummy Component" />
+    <MESSAGE value="Add `toEdit` output to `TableVideoGame` and bind it in `ListVideoGames` component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add `toEdit` output to `TableVideoGame` and bind it in `ListVideoGames` component" />
   </component>
 </project>

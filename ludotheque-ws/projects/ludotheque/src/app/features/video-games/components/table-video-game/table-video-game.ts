@@ -9,5 +9,10 @@ import {VideoGame} from '../../models/video-game';
 })
 export class TableVideoGame {
   readonly videoGames = input.required<VideoGame[]>();
+
   readonly toEdit = output<VideoGame>();
+
+  editClicked(videoGame: VideoGame) {
+    this.toEdit.emit(videoGame);
+  }
 }

@@ -1,5 +1,8 @@
-<ul>
+<table>
   @for (videoGame of videoGames(); track videoGame.title) {
-    <li>{{ videoGame.title }}</li>
+    <tr>
+      <td>{{ videoGame.title }}</td>
+      <td><button (click)="editClicked(videoGame)">[Edit]</button></td>
+    </tr>
   }
-</ul>
+</table>
