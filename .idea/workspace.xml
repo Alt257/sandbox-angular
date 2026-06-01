@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Update workspace configuration for IntelliJ IDEA">
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/app.config.ts" afterDir="false" />
+    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Remove placeholder content and clean up project structure">
       <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/app.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,61 +30,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.6059486383447883E-103" />
-      <entry key="S5" value="2.8080343332372574E-41" />
-      <entry key="S10" value="1.5852229353302167E-20" />
-      <entry key="S30" value="1.0861824659730493E-6" />
-      <entry key="S60" value="0.003126335449788446" />
-      <entry key="M2" value="0.1677373212425787" />
-      <entry key="M5" value="1.8297642430356724" />
-      <entry key="M10" value="4.058059842496959" />
-      <entry key="M15" value="5.292079799466124" />
-      <entry key="M30" value="6.901355593407764" />
-      <entry key="H1" value="7.881129192620184" />
-      <entry key="H2" value="8.42200462359658" />
-      <entry key="H4" value="8.706207060728739" />
-      <entry key="D1" value="8.950354901737205" />
-      <entry key="W1" value="8.992891019350587" />
+      <entry key="MS100" value="1.000005722320184" />
+      <entry key="MS500" value="1.1541785199278174" />
+      <entry key="S2" value="2.0683324485468084" />
+      <entry key="S5" value="2.9738243845799452" />
+      <entry key="S10" value="4.064887048158671" />
+      <entry key="S30" value="6.373584212159256" />
+      <entry key="S60" value="10.966584003187917" />
+      <entry key="M2" value="20.293158225907383" />
+      <entry key="M5" value="35.88963846639554" />
+      <entry key="M10" value="46.592928694076356" />
+      <entry key="M15" value="51.755970217411424" />
+      <entry key="M30" value="58.32275825603391" />
+      <entry key="H1" value="62.33867712752705" />
+      <entry key="H2" value="64.57961564794738" />
+      <entry key="H4" value="65.76611935482232" />
+      <entry key="D1" value="66.79094989843338" />
+      <entry key="W1" value="66.97005082999466" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0" />
-      <entry key="M10" value="1.0" />
-      <entry key="M15" value="1.0" />
-      <entry key="M30" value="1.0" />
-      <entry key="H1" value="1.0" />
-      <entry key="H2" value="1.0" />
-      <entry key="H4" value="1.0" />
-      <entry key="D1" value="1.0" />
-      <entry key="W1" value="1.0" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="3.126598077255379E-103" />
+      <entry key="S5" value="9.954714810836715E-42" />
+      <entry key="S10" value="3.1551093183654867E-21" />
+      <entry key="S30" value="1.4666893453556398E-7" />
+      <entry key="S60" value="3.829738039808516E-4" />
+      <entry key="M2" value="0.019569716502311707" />
+      <entry key="M5" value="0.20731647394235217" />
+      <entry key="M10" value="0.45532018837555627" />
+      <entry key="M15" value="0.5918494811724389" />
+      <entry key="M30" value="0.7693175424832315" />
+      <entry key="H1" value="0.8771074862770414" />
+      <entry key="H2" value="0.9365401679997728" />
+      <entry key="H4" value="0.9677500545077604" />
+      <entry key="D1" value="0.9945513259658152" />
+      <entry key="W1" value="0.999219794204655" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.40612619817811774" />
-      <entry key="MS500" value="0.8350879194283694" />
-      <entry key="S2" value="0.9559453175937421" />
-      <entry key="S5" value="0.9821395952633915" />
-      <entry key="S10" value="0.9910295632640791" />
-      <entry key="S30" value="0.9970019547041954" />
-      <entry key="S60" value="1.0016254955084798" />
-      <entry key="M2" value="1.166982714010361" />
-      <entry key="M5" value="2.8294465502375057" />
-      <entry key="M10" value="5.057890402226152" />
-      <entry key="M15" value="6.291962929290981" />
-      <entry key="M30" value="7.901294609051991" />
-      <entry key="H1" value="8.881097924442354" />
-      <entry key="H2" value="9.421988775319079" />
-      <entry key="H4" value="9.706199080317768" />
-      <entry key="D1" value="9.950353563611838" />
-      <entry key="W1" value="9.992890827989296" />
+      <entry key="MS100" value="0.9794259283114901" />
+      <entry key="MS500" value="1.1495024832666174" />
+      <entry key="S2" value="2.066366560765289" />
+      <entry key="S5" value="2.9726596273370314" />
+      <entry key="S10" value="4.06404079604227" />
+      <entry key="S30" value="6.372799622292314" />
+      <entry key="S60" value="10.965450349692272" />
+      <entry key="M2" value="20.310739656772057" />
+      <entry key="M5" value="36.09536683008219" />
+      <entry key="M10" value="47.04720969942918" />
+      <entry key="M15" value="52.34705574694441" />
+      <entry key="M30" value="59.09165216541208" />
+      <entry key="H1" value="63.21556096221151" />
+      <entry key="H2" value="65.51604082200515" />
+      <entry key="H4" value="66.73381109176981" />
+      <entry key="D1" value="67.78549138828971" />
+      <entry key="W1" value="67.96926921615332" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -139,7 +137,7 @@
       <option name="presentableId" value="Default" />
       <updated>1780314566780</updated>
       <workItem from="1780314569489" duration="1534000" />
-      <workItem from="1780316156789" duration="2948000" />
+      <workItem from="1780316156789" duration="3681000" />
     </task>
     <task id="LOCAL-00001" summary="Add IntelliJ IDEA project configuration files to version control">
       <option name="closed" value="true" />
@@ -181,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780318806682</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Remove placeholder content and clean up project structure">
+      <option name="closed" value="true" />
+      <created>1780319138061</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1780319138061</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +224,7 @@
     <MESSAGE value="Add initial project setup with Angular, Prettier, and VS Code configurations" />
     <MESSAGE value="Set up initial 'ludotheque' (ldk) project&#10;&#10;Angular application with routing, basic structure, and placeholder content" />
     <MESSAGE value="Update workspace configuration for IntelliJ IDEA" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Remove placeholder content and clean up project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove placeholder content and clean up project structure" />
   </component>
 </project>
