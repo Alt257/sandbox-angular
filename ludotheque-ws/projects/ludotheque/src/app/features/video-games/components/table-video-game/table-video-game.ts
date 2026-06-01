@@ -1,4 +1,4 @@
-import {Component, input, signal} from '@angular/core';
+import {Component, input, output, signal} from '@angular/core';
 import {VideoGame} from '../../models/video-game';
 
 @Component({
@@ -9,4 +9,5 @@ import {VideoGame} from '../../models/video-game';
 })
 export class TableVideoGame {
   readonly videoGames = input.required<VideoGame[]>();
+  readonly toEdit = output<VideoGame>();
 }

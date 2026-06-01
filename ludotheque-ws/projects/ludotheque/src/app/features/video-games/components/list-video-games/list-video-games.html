@@ -5,5 +5,8 @@
 <button (click)="changeTitle()">Changer le titre</button>
 
 @if (videoGamesResponse) {
-  <ldk-table-video-game [videoGames]="videoGamesResponse.results" />
+  <ldk-table-video-game
+    [videoGames]="videoGamesResponse.results"
+    (toEdit)="editOne($event)"
+  />
 }
