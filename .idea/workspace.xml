@@ -4,27 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="" />
+    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Add initial workspace setup with Angular (mono repository), Prettier, and VS Code configurations">
+      <change beforePath="$PROJECT_DIR$/ludotheque-ws/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ludotheque-ws/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ludotheque-ws/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ludotheque-ws/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/tsconfig.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="4" />
+    <option name="cachedIndexableFilesCount" value="1" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3EXAVrhIf0dz55P1zPTZuXZGBdp" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -40,7 +50,8 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dev/ludotheque",
+    "ignore.virus.scanning.warn.message": "true",
     "javascript.preferred.runtime.type.id": "node",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "D:/dev/sandbox/Angular-npx-cours-dev-curieux",
@@ -69,10 +80,46 @@
       <option name="presentableId" value="Default" />
       <updated>1780314566780</updated>
       <workItem from="1780314569489" duration="1534000" />
+      <workItem from="1780316156789" duration="996000" />
     </task>
+    <task id="LOCAL-00001" summary="Add IntelliJ IDEA project configuration files to version control">
+      <option name="closed" value="true" />
+      <created>1780316226260</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1780316226260</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add initial project setup with Angular, Prettier, and VS Code configurations">
+      <option name="closed" value="true" />
+      <created>1780316394856</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1780316394856</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="#INITIAL&#10;&#10;Add IntelliJ IDEA project configuration files to version control" />
+    <MESSAGE value="Add initial workspace setup with Angular (mono repository), Prettier, and VS Code configurations" />
+    <MESSAGE value="#INITIAL&#10;&#10;Add IntelliJ IDEA project configuration files to version control" />
+    <MESSAGE value="Add initial workspace setup with Angular (mono repository), Prettier, and VS Code configurations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial workspace setup with Angular (mono repository), Prettier, and VS Code configurations" />
   </component>
 </project>
