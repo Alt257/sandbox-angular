@@ -20,12 +20,13 @@ export class ListVideoGames {
 
   protected readonly videoGamesResponse$ = this.getAllVideoGames.getAll();
   protected readonly title = signal('Mes jeux');
+  protected readonly videoGameToBeEditable = signal<VideoGame | null | undefined>(undefined);
 
   protected changeTitle() {
     this.title.set('Mes jeux-vidéos');
   }
 
   protected editOne(videoGame: VideoGame) {
-    console.log(videoGame);
+    this.videoGameToBeEditable.set(videoGame);
   }
 }
