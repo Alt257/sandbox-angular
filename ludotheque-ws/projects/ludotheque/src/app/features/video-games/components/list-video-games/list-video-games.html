@@ -5,9 +5,5 @@
 <button (click)="changeTitle()">Changer le titre</button>
 
 @if (videoGamesResponse) {
-  <ul>
-  @for (videoGame of videoGamesResponse.results; track videoGame.title) {
-    <li>{{ videoGame.title }}</li>
-  }
-  </ul>
+  <ldk-table-video-game [videoGames]="videoGamesResponse.results" />
 }
