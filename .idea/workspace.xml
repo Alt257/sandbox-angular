@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Add edit functionality to `ListVideoGames` and create form in `EditVideoGame`">
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/edit-video-game/edit-video-game.html" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/edit-video-game/edit-video-game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/edit-video-game/edit-video-game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/edit-video-game/edit-video-game.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.html" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/video-games/components/list-video-games/list-video-games.html" afterDir="false" />
+    <list default="true" id="30ff1943-1262-47dd-bb0b-ed838778d4c4" name="Changes" comment="Bind `videoGame` input to `EditVideoGame` and set up form with validation in the template.">
+      <change afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/features/star-wars-films/models/star-wars-films.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/pages/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/pages/home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/shared/uis/menus/main-menu/main-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/ludotheque-ws/projects/ludotheque/src/app/shared/uis/menus/main-menu/main-menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="447" />
+    <option name="cachedIndexableFilesCount" value="468" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -33,6 +35,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Alt257&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Alt257/ludotek--angular.git&quot;,
+    &quot;accountId&quot;: &quot;bd45932c-fc75-4f46-8923-596f3678a287&quot;
+  }
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -40,60 +54,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="5.99353567050111E-275" />
-      <entry key="S5" value="2.9311696596177736E-110" />
-      <entry key="S10" value="2.3959194921039583E-55" />
-      <entry key="S30" value="9.835805989809004E-19" />
-      <entry key="S60" value="1.4025040245170042E-9" />
-      <entry key="M2" value="5.3696492557568506E-5" />
-      <entry key="M5" value="0.05072481899724287" />
-      <entry key="M10" value="1.2444176288563142" />
-      <entry key="M15" value="4.424078893877797" />
-      <entry key="M30" value="20.56377234724268" />
-      <entry key="H1" value="61.37818617611508" />
-      <entry key="H2" value="124.99834402266288" />
-      <entry key="H4" value="187.1395717133806" />
-      <entry key="D1" value="268.253354659319" />
-      <entry key="W1" value="285.9266880305439" />
+      <entry key="MS500" value="3.928271233874866E-155" />
+      <entry key="S2" value="1.08008330549643E-38" />
+      <entry key="S5" value="2.6697472630376503E-15" />
+      <entry key="S10" value="2.0951751685760768E-7" />
+      <entry key="S30" value="0.0560344938398559" />
+      <entry key="S60" value="1.6235439047875788" />
+      <entry key="M2" value="9.525672962658646" />
+      <entry key="M5" value="32.56745731481161" />
+      <entry key="M10" value="58.81931180523039" />
+      <entry key="M15" value="76.7454616717411" />
+      <entry key="M30" value="107.08887080088742" />
+      <entry key="H1" value="138.3222508416934" />
+      <entry key="H2" value="191.03744044968315" />
+      <entry key="H4" value="267.0235122930197" />
+      <entry key="D1" value="407.45651584030037" />
+      <entry key="W1" value="444.35355790327276" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0002686494889084" />
-      <entry key="S2" value="1.135000665326713" />
-      <entry key="S5" value="1.5766837229995907" />
-      <entry key="S10" value="2.034967774333495" />
-      <entry key="S30" value="2.7760643144636266" />
-      <entry key="S60" value="3.3909436536057616" />
-      <entry key="M2" value="3.9911287496240164" />
-      <entry key="M5" value="4.5656689813372395" />
-      <entry key="M10" value="5.446061615369802" />
-      <entry key="M15" value="6.9724291991923" />
-      <entry key="M30" value="13.135746639847056" />
-      <entry key="H1" value="24.824481557341652" />
-      <entry key="H2" value="39.10831057392734" />
-      <entry key="H4" value="51.182554526478064" />
-      <entry key="D1" value="65.51241219471937" />
-      <entry key="W1" value="68.48713392929739" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000000172335" />
+      <entry key="S60" value="1.0000042900618897" />
+      <entry key="M2" value="1.0026461335697308" />
+      <entry key="M5" value="1.1819482296028887" />
+      <entry key="M10" value="1.8300805868894496" />
+      <entry key="M15" value="2.3963800076763375" />
+      <entry key="M30" value="3.605818931641986" />
+      <entry key="H1" value="7.50053923679199" />
+      <entry key="H2" value="19.0469226679204" />
+      <entry key="H4" value="35.956214108442744" />
+      <entry key="D1" value="65.28505765195852" />
+      <entry key="W1" value="72.67910616370311" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="7.00173460945228E-4" />
-      <entry key="MS500" value="0.23393056017802785" />
-      <entry key="S2" value="0.7709187819392976" />
-      <entry key="S5" value="1.330936058957441" />
-      <entry key="S10" value="1.86629606055833" />
-      <entry key="S30" value="2.701102126572643" />
-      <entry key="S60" value="3.349142578923199" />
-      <entry key="M2" value="3.9686577903210982" />
-      <entry key="M5" value="4.606370539844589" />
-      <entry key="M10" value="6.681436634584493" />
-      <entry key="M15" value="11.385439894842676" />
-      <entry key="M30" value="33.68505727510637" />
-      <entry key="H1" value="86.18801251762952" />
-      <entry key="H2" value="164.09508737900336" />
-      <entry key="H4" value="238.31460284820662" />
-      <entry key="D1" value="333.76417428834253" />
-      <entry key="W1" value="354.4135844811326" />
+      <entry key="MS100" value="0.01509275513945071" />
+      <entry key="MS500" value="0.4322686156539326" />
+      <entry key="S2" value="0.8108460890344945" />
+      <entry key="S5" value="0.9195500461516608" />
+      <entry key="S10" value="0.9589319307796397" />
+      <entry key="S30" value="1.0421412193402222" />
+      <entry key="S60" value="2.6162974200334648" />
+      <entry key="M2" value="10.523777197104883" />
+      <entry key="M5" value="33.74609928385841" />
+      <entry key="M10" value="60.646292443573785" />
+      <entry key="M15" value="79.13896371812865" />
+      <entry key="M30" value="110.69226811080753" />
+      <entry key="H1" value="145.8194179540028" />
+      <entry key="H2" value="210.0793032493168" />
+      <entry key="H4" value="302.9747354209775" />
+      <entry key="D1" value="472.740036220378" />
+      <entry key="W1" value="517.0324191763917" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -108,10 +122,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaScript Debug.list-video-games.html.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.app.routes.ts.executor": "Debug",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
@@ -125,12 +142,19 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "prettierjs.PrettierConfiguration.Package": "D:\\dev\\sandbox\\Angular-npx-cours-dev-curieux\\ludotheque-ws\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "ts.external.directory.path": "D:\\dev\\sandbox\\Angular-npx-cours-dev-curieux\\ludotheque-ws\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\sandbox\Angular-npx-cours-dev-curieux\ludotheque-ws\projects\ludotheque\src\app\features\star-wars\sw-films\components" />
+      <recent name="D:\dev\sandbox\Angular-npx-cours-dev-curieux\ludotheque-ws\projects\ludotheque\src\app\features\star-wars\sw-films" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -146,7 +170,8 @@
       <option name="presentableId" value="Default" />
       <updated>1780314566780</updated>
       <workItem from="1780314569489" duration="1534000" />
-      <workItem from="1780316156789" duration="16384000" />
+      <workItem from="1780316156789" duration="20327000" />
+      <workItem from="1780603797370" duration="2671000" />
     </task>
     <task id="LOCAL-00001" summary="Add IntelliJ IDEA project configuration files to version control">
       <option name="closed" value="true" />
@@ -380,7 +405,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780329795644</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Bind `videoGame` input to `EditVideoGame` and set up form with validation in the template.">
+      <option name="closed" value="true" />
+      <created>1780332628649</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1780332628649</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +443,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Set up initial 'ludotheque' (ldk) project&#10;&#10;Angular application with routing, basic structure, and placeholder content" />
     <MESSAGE value="Update workspace configuration for IntelliJ IDEA" />
     <MESSAGE value="Remove placeholder content and clean up project structure" />
     <MESSAGE value="Add application title to app.html" />
@@ -435,6 +467,7 @@
     <MESSAGE value="Add `toEdit` output to `TableVideoGame` and bind it in `ListVideoGames` component" />
     <MESSAGE value="Convert `TableVideoGame` to use a table layout and add an edit button feature&#10;&#10;demonstrate how to emit signals for parents" />
     <MESSAGE value="Add edit functionality to `ListVideoGames` and create form in `EditVideoGame`" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add edit functionality to `ListVideoGames` and create form in `EditVideoGame`" />
+    <MESSAGE value="Bind `videoGame` input to `EditVideoGame` and set up form with validation in the template." />
+    <option name="LAST_COMMIT_MESSAGE" value="Bind `videoGame` input to `EditVideoGame` and set up form with validation in the template." />
   </component>
 </project>
