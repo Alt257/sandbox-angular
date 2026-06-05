@@ -1,6 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {MainMenu} from './shared/uis/menus/main-menu/main-menu';
+import { MainMenu } from './shared/uis/menus/main-menu/main-menu';
 import { StarsField } from './shared/uis/decorations/stars/components/stars-field';
 
 @Component({
