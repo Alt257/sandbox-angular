@@ -1,6 +1,17 @@
+@let filmsResponse = allFilmsResponse$ | async;
+
 <main>
   <section>
-    <h2>Films</h2>
-    liste des films...
+    <h2>{{ title() }}</h2>
+    @if (filmsResponse) {
+      <ul>
+        @for (film of filmsResponse.results; track film.title) {
+          <li>{{ film.title }}</li>
+        }
+      </ul>
+    }
+    <ul>
+
+    </ul>
   </section>
 </main>

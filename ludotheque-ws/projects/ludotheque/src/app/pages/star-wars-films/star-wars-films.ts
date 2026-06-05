@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { AsyncPipe } from '@angular/common';
+import {Component, inject, signal} from '@angular/core';
+import {StarWarsFilmsManager} from '../../features/star-wars-films/services/star-wars-films-manager';
+import {AsyncPipe} from '@angular/common';
 
 @Component({
   selector: 'ldk-star-wars-films',
@@ -10,6 +11,8 @@ import { AsyncPipe } from '@angular/common';
   styleUrl: './star-wars-films.css',
 })
 export class StarWarsFilms {
+  private readonly starWarsFilmsManager = inject(StarWarsFilmsManager);
 
-  private readonly allFilmsResponse$
+  protected readonly allFilmsResponse$ = this.starWarsFilmsManager.getAll();
+  protected readonly title = signal('Films');
 }
