@@ -1,4 +1,11 @@
-<ul>
-  <li><a routerLink="home">Acceuil</a></li>
-  <li><a href="star-wars-films">films</a></li>
-</ul>
+<nav class="main-menu" aria-label="Navigation principale">
+  <a class="main-menu__brand" routerLink="/home">Ludothèque</a>
+
+  <ul class="main-menu__links">
+    <li><a
+      routerLink="/star-wars-films"
+      routerLinkActive="main-menu__link--active"
+      class="main-menu__link"
+    >Films</a></li>
+  </ul>
+</nav>

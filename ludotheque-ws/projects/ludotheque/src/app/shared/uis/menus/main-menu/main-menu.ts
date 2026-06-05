@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
-import {RouterLink} from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'ldk-main-menu',
-  imports: [RouterLink],
+  imports: [
+    RouterLink,
+    RouterLinkActive,
+  ],
   templateUrl: './main-menu.html',
   styleUrl: './main-menu.css',
 })
