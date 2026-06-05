@@ -39,10 +39,6 @@ body {
   margin: 0;
 
   color: var(--sw-white);
-  background:
-    radial-gradient(circle, rgba(255, 255, 255, 0.9) 1px, transparent 1.5px) 0 0 / 90px 90px,
-    radial-gradient(circle, rgba(255, 255, 255, 0.55) 1px, transparent 1.5px) 35px 55px / 130px 130px,
-    transparent;
 
   overflow-x: hidden;
 }
@@ -57,8 +53,9 @@ body::before {
 
   background:
     linear-gradient(115deg, transparent 0 42%, rgba(56, 189, 248, 0.1) 43%, transparent 44%),
-    linear-gradient(285deg, transparent 0 48%, rgba(255, 232, 31, 0.08) 49%, transparent 50%);
-  opacity: 0.7;
+    linear-gradient(285deg, transparent 0 48%, rgba(255, 232, 31, 0.08) 49%, transparent 50%),
+    linear-gradient(265deg, transparent 0 32%, rgb(52 251 0 / 0.08) 33%, transparent 34%);
+  opacity: 1;
 }
 
 a {

@@ -1,0 +1,35 @@
+.stars-field {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+
+  display: block;
+
+  background: #ffffff;
+  border-radius: 999px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.85);
+
+  animation-name: star-twinkle;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes star-twinkle {
+  from {
+    filter: brightness(0.7);
+    transform: scale(0.8);
+  }
+
+  to {
+    filter: brightness(1.6);
+    transform: scale(1.35);
+  }
+}
