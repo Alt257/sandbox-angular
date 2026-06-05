@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { SwApiFilmsGetAllResponse } from '../models/star-wars-films';
+import { SwApiFilmsGetAllResponse } from '../models/star-wars-film';
 
 @Injectable({
   providedIn: 'root',

@@ -6,7 +6,7 @@ import {
 import { firstValueFrom } from 'rxjs';
 
 import { StarWarsFilmsManager } from './star-wars-films-manager';
-import { SwApiFilmsGetAllResponse } from '../models/star-wars-films';
+import { SwApiFilmsGetAllResponse } from '../models/star-wars-film';
 
 describe('StarWarsFilmsManager', () => {
   let service: StarWarsFilmsManager;
