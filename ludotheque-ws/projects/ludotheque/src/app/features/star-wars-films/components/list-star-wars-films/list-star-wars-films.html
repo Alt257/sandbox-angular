@@ -1,1 +1,18 @@
-<p>list-star-wars-films works!</p>
+<table>
+  <thead>
+  <tr>
+    <th>n°</th>
+    <th>titre</th>
+    <th>actions</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  @for (film of films(); track film.title) {
+    <tr>
+      <td>{{ film.episode_id }}</td>
+      <td>{{ film.title}}</td>
+    </tr>
+  }
+  </tbody>
+</table>

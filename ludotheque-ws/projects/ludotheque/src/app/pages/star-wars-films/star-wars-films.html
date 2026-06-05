@@ -4,11 +4,9 @@
   <section>
     <h2>{{ title() }}</h2>
     @if (filmsResponse) {
-      <ul>
-        @for (film of filmsResponse.results; track film.title) {
-          <li>{{ film.title }}</li>
-        }
-      </ul>
+      <ldk-list-star-wars-films
+        [films]="filmsResponse.results"
+      />
     }
     <ul>
 
