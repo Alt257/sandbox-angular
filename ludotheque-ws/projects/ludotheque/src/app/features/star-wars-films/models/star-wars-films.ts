@@ -3,6 +3,6 @@ export interface StarWarsFilms {
   title: string;
 }
 
-export interface StarWarsFilmsSwApiResponse {
+export interface SwApiFilmsGetAllResponse {
   results: StarWarsFilms[];
 }
